@@ -822,7 +822,27 @@ enum TrinityStrings
     LANG_MOVEGENS_EFFECT                = 1142,
     LANG_MOVEFLAGS_GET                  = 1143,
     LANG_MOVEFLAGS_SET                  = 1144,
-    // Room for more level 3              1144-1199 not used
+    LANG_AHBOT_RELOAD_OK                = 1145,
+    LANG_AHBOT_STATUS_BAR_CONSOLE       = 1146,
+    LANG_AHBOT_STATUS_MIDBAR_CONSOLE    = 1147,
+    LANG_AHBOT_STATUS_TITLE1_CONSOLE    = 1148,
+    LANG_AHBOT_STATUS_TITLE1_CHAT       = 1149,
+    LANG_AHBOT_STATUS_FORMAT_CONSOLE    = 1150,
+    LANG_AHBOT_STATUS_FORMAT_CHAT       = 1151,
+    LANG_AHBOT_STATUS_ITEM_COUNT        = 1152,
+    LANG_AHBOT_STATUS_ITEM_RATIO        = 1153,
+    LANG_AHBOT_STATUS_TITLE2_CONSOLE    = 1154,
+    LANG_AHBOT_STATUS_TITLE2_CHAT       = 1155,
+    LANG_AHBOT_QUALITY_GREY             = 1156,
+    LANG_AHBOT_QUALITY_WHITE            = 1157,
+    LANG_AHBOT_QUALITY_GREEN            = 1158,
+    LANG_AHBOT_QUALITY_BLUE             = 1159,
+    LANG_AHBOT_QUALITY_PURPLE           = 1160,
+    LANG_AHBOT_QUALITY_ORANGE           = 1161,
+    LANG_AHBOT_QUALITY_YELLOW           = 1162,
+    LANG_AHBOT_ITEMS_AMOUNT             = 1163,
+    LANG_AHBOT_ITEMS_RATIO              = 1164,
+    // Room for more level 3              1165-1199 not used
 
     // Debug commands
     LANG_CINEMATIC_NOT_EXIST            = 1200,
