@@ -502,7 +502,7 @@ uint32 AuctionBotBuyer::GetBuyableEntry(BuyerConfiguration& config)
                 if (!entry->owner)
                 {
 
-                    if (entry->bid != 0 && entry->bidder) // Add bided by player
+                    if (entry->bid != 0 && entry->bidder) // Add bid by player
                     {
                         config.CheckedEntry[entry->Id].LastExist = Now;
                         config.CheckedEntry[entry->Id].AuctionId = entry->Id;
