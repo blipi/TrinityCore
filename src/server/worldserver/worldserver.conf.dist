@@ -2783,7 +2783,7 @@ AuctionHouseBot.ItemsPerCycle.Boost = 1000
 #                    Normaly this value is used always when auction table is already initialised.
 #       Default:     20
 
-AuctionHouseBot.ItemsPerCycle.Normal
+AuctionHouseBot.ItemsPerCycle.Normal = 20
 
 #
 #    AuctionHouseBot.BuyPrice.Seller
@@ -3003,12 +3003,9 @@ AuctionHouseBot.Buyer.Recheck.Interval = 20
 
 #
 #    AuctionHouseBot.Buyer.Alliance.Chance.Ratio
-#       Description: When the evaluation of an entry is done you will have "x" chance for this entry to be bought.
-#                    The chance ratio is simply (x / chance ratio)
-#                    For ex : If the evaluation gives you 5000 (maximum chance) chance and ratio is set to 3
-#                    you will have 5000 on 15000 (3 * 5000) random chance
-#                    This for every faction independently
-#       Default:     3 (literaly 1 chance by 3)
+#       Description: Chance ratio for the buyer to buy an item. Higher the value, lesser the probability
+#       Example:     3 (1 out of 3 change, that is, 33%).
+#       Default:     3
 #
 
 AuctionHouseBot.Buyer.Alliance.Chance.Ratio = 3
