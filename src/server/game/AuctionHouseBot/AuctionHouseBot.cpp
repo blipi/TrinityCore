@@ -1633,6 +1633,7 @@ void AuctionHouseBot::InitilizeAgents()
     {
         if (_seller)
             delete _seller;
+            
         _seller = new AuctionBotSeller();
         if (!_seller->Initialize())
         {
@@ -1640,10 +1641,12 @@ void AuctionHouseBot::InitilizeAgents()
             _seller = NULL;
         }
     }
+    
     if (sAuctionBotConfig->getConfig(CONFIG_AHBOT_BUYER_ENABLED))
     {
-        if (_seller)
+        if (_buyer)
             delete _buyer;
+            
         _buyer = new AuctionBotBuyer();
         if (!_buyer->Initialize())
         {
