@@ -58,7 +58,7 @@ struct ItemToSell
 };
 
 typedef std::vector<ItemToSell> ItemsToSellArray;
-typedef std::vector<std::vector<uint32>> AllItemsArray;
+typedef std::vector<std::vector<uint32> > AllItemsArray;
 
 struct SellerItemClassInfo
 {
