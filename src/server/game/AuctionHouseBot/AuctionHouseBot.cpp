@@ -223,6 +223,7 @@ bool AuctionBotConfig::Initialize()
 
     _itemsPerCycleBoost = getConfig(CONFIG_AHBOT_ITEMS_PER_CYCLE_BOOST);
     _itemsPerCycleNormal = getConfig(CONFIG_AHBOT_ITEMS_PER_CYCLE_NORMAL);
+    
     return true;
 }
 
@@ -1663,8 +1664,11 @@ void AuctionHouseBot::InitilizeAgents()
 
 void AuctionHouseBot::Initialize()
 {
+    sLog->outInfo(LOG_FILTER_AHBOT, "AHBot: Initialize");
     if (sAuctionBotConfig->Initialize())
         InitilizeAgents();
+    else
+        sLog->outInfo(LOG_FILTER_AHBOT, "AHBot: Config failed");
 }
 
 void AuctionHouseBot::SetItemsRatio(uint32 al, uint32 ho, uint32 ne)
