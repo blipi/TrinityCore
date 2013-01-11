@@ -787,10 +787,10 @@ void AuctionBotBuyer::addNewAuctionBuyerBotBid(BuyerConfiguration& config)
                     BuyEntry(auction);
             }
             else if (IsBidableEntry(bidPriceByItem, InGame_BuyPrice, MaxBidablePrice, sameitem_itr->second.MinBidPrice, MaxChance/2, config.FactionChance))
-                    PlaceBidToEntry(auction, bidPrice);
+                PlaceBidToEntry(auction, bidPrice);
         }
         else if (IsBidableEntry(bidPriceByItem, InGame_BuyPrice, MaxBidablePrice, sameitem_itr->second.MinBidPrice,MaxChance, config.FactionChance))
-                PlaceBidToEntry(auction, bidPrice);
+            PlaceBidToEntry(auction, bidPrice);
 
         itr->second.LastChecked = Now;
         --BuyCycles;
@@ -808,7 +808,8 @@ bool AuctionBotBuyer::Update(AuctionHouseType houseType)
             addNewAuctionBuyerBotBid(_houseConfig[houseType]);
         return true;
     }
-    else return false;
+    else 
+        return false;
 }
 
 //== AuctionBotSeller functions ============================
