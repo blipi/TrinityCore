@@ -1630,10 +1630,14 @@ AuctionHouseBot::~AuctionHouseBot()
 
 void AuctionHouseBot::InitilizeAgents()
 {
+    sLog->outInfo(LOG_FILTER_AHBOT, "AHBot: Init agents", count);
+
     if (sAuctionBotConfig->getConfig(CONFIG_AHBOT_SELLER_ENABLED))
     {
         if (_seller)
             delete _seller;
+            
+        sLog->outInfo(LOG_FILTER_AHBOT, "AHBot: Init seller", count);
             
         _seller = new AuctionBotSeller();
         if (!_seller->Initialize())
